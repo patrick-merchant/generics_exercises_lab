@@ -90,23 +90,19 @@ System.out.println("START OF EXERCISE 4");
 
 System.out.println("");
 
-    wildEx.printNames_allFamily(grampas);
-    wildEx.printNames_allFamily(fathers);
-    wildEx.printNames_allFamily(children);
+    wildEx.printNames_allFamily(grampas, fathers, children);
 
-    wildEx.printNames_allFamily(names);
-//
-//System.out.println("");
-//
+//    wildEx.printNames_allFamily(names);
+
+System.out.println("");
+
 //    wildEx.printNames_fathersAndChildrenOnly(grampas);
-//    wildEx.printNames_fathersAndChildrenOnly(fathers);
-//    wildEx.printNames_fathersAndChildrenOnly(children);
-//
-//System.out.println("");
-//
+    wildEx.printNames_fathersAndChildrenOnly(fathers, children);
+
+System.out.println("");
+
 //    wildEx.printNames_grampasAndFathersOnly(children);
-//    wildEx.printNames_grampasAndFathersOnly(grampas);
-//    wildEx.printNames_grampasAndFathersOnly(fathers);
+    wildEx.printNames_grampasAndFathersOnly(grampas, fathers);
 
 // END OF WILDCARD EXERCISE 4.
 

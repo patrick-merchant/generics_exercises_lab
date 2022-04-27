@@ -1,38 +1,38 @@
 package com.bnta.wildcards;
 
+import com.sun.jdi.ClassType;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class WildcardExample <L>{
-//    private Grampa grampa;
-
-//
-//    public void printNames_fathersAndChildrenOnly(List<Grampa> listG, List<Father> listF, List<Child> listC){
-//        System.out.println(listG);
-//        System.out.println(listF);
-//        System.out.println(listC);
-//    }
-////
-////    public void printNames_grampasAndFathersOnly(List<Father> list){
-////        System.out.println(list);
-////    }
+public class WildcardExample {
 
 
-    public void printNames_allFamily(List<Class> list){
-        System.out.println(list);
-//
-//        this.grampa = grampa;
-//
-//        if(list.contains(getClass(grampa))){
-//            System.out.println(list);
-//        } else if(list.contains(.get(1))){
-//            System.out.println(list);
-//        } else if(list.contains(.get(2))){
-//            System.out.println(list);
-//        }
-//
-//
+    public void printNames_fathersAndChildrenOnly(List<Father> fatherList, List<Child> childList){
+        System.out.println(fatherList);
+        System.out.println(childList);
+    }
+
+    public void printNames_grampasAndFathersOnly(List<Grampa> grampaList, List<Father> fatherList){
+        System.out.println(grampaList);
+        System.out.println(fatherList);
+    }
+
+
+    public void printNames_allFamily(List<Grampa> grampaList) {
+        System.out.println(grampaList);
+    }
+
+    public void printNames_allFamily(List<Grampa> grampaList, List<Father> fatherList) {
+        System.out.println(grampaList);
+        System.out.println(fatherList);
+    }
+
+    public void printNames_allFamily(List<Grampa> grampaList, List<Father> fatherList, List<Child> childList){
+        System.out.println(grampaList);
+        System.out.println(fatherList);
+        System.out.println(childList);
     }
 
     //printNames_fathersAndChildrenOnly - accepts only arguments of type: List<Father>, List<Children>
